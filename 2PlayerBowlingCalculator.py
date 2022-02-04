@@ -146,12 +146,12 @@ def isSpareB(i):
         return True
 
 def isOpenA(i):
-    if type(playerA_pins[i][0]) == type(playerA_pins[i][1]) and playerA_pins[i][0] + playerA_pins[i][1] > 0 and playerA_pins[i][0] + playerA_pins[i][1] != 10:
+    if type(playerA_pins[i][0]) == type(playerA_pins[i][1]) and playerA_pins[i][0] + playerA_pins[i][1] >= 0 and playerA_pins[i][0] + playerA_pins[i][1] != 10:
         memoryA.append(playerA_pins[i][0])
         memoryA.append(playerA_pins[i][1])
         return True
 def isOpenB(i):
-    if type(playerB_pins[i][0]) == type(playerB_pins[i][1]) and playerB_pins[i][0] + playerB_pins[i][1] > 0 and playerB_pins[i][0] + playerB_pins[i][1] != 10:
+    if type(playerB_pins[i][0]) == type(playerB_pins[i][1]) and playerB_pins[i][0] + playerB_pins[i][1] >= 0 and playerB_pins[i][0] + playerB_pins[i][1] != 10:
         memoryB.append(playerB_pins[i][0])
         memoryB.append(playerB_pins[i][1])
         return True
