@@ -75,7 +75,7 @@ def isSpare(i):
         return True
 
 def isOpen(i):
-    if type(player_pins[i][0]) == type(player_pins[i][1]) and player_pins[i][0] + player_pins[i][1] > 0 and player_pins[i][0] + player_pins[i][1] != 10:
+    if type(player_pins[i][0]) == type(player_pins[i][1]) and player_pins[i][0] + player_pins[i][1] >= 0 and player_pins[i][0] + player_pins[i][1] != 10:
         memory.append(player_pins[i][0])
         memory.append(player_pins[i][1])
         return True
